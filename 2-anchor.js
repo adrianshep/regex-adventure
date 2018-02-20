@@ -15,3 +15,32 @@ Remember from the previous adventure that regexes in javascript are between two
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+
+  TAP version 13
+# (anonymous)
+ok 1 LITERALLY CAN'T EVEN
+ok 2 FIGURATIVELY can't even
+ok 3 I am LITERALLY on a roll down a hill right now
+ok 4 literaturely
+ok 5 litERALLY whatever
+ok 6 LITERALLY WHATEVER
+
+1..6
+# tests 6
+# pass  6
+
+# ok
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@     YOUR SOLUTION IS CORRECT!     @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+// Here is the reference solution:
+
+  module.exports = function (str) {
+    return /^LITERALLY/.test(str)
+  }
