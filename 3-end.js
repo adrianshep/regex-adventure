@@ -15,3 +15,31 @@ Remember from the previous adventure that regexes in javascript are between two
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+  TAP version 13
+# (anonymous)
+ok 1 THIS SHIITAKE IS BANANAS
+ok 2 BANANAS
+ok 3 BANANAS ARE GREEN OR YELLOW
+ok 4 NOTHING
+ok 5 EVERYTHING IS BANANAS.
+ok 6 EVERYTHING IS BANANAS
+
+1..6
+# tests 6
+# pass  6
+
+# ok
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@     YOUR SOLUTION IS CORRECT!     @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+// Here is the reference solution:
+
+  module.exports = function (str) {
+    return /BANANAS$/.test(str)
+  }
