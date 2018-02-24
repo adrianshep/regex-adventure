@@ -23,3 +23,34 @@ two `/` characters and they have a `.test()` method.
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+  TAP version 13
+# (anonymous)
+ok 1 az
+ok 2 babbage
+ok 3 AAA
+ok 4 123
+ok 5 abc123
+ok 6 Q1
+ok 7 under
+ok 8 404x
+ok 9 obelisk
+
+1..9
+# tests 9
+# pass  9
+
+# ok
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@     YOUR SOLUTION IS CORRECT!     @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+// Here is the reference solution:
+
+  module.exports = function (str) {
+    return /^[aeiou0-9]/.test(str)
+  }
