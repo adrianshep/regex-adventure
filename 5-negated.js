@@ -32,3 +32,32 @@ newlines (under some conditions).
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+  TAP version 13
+  # (anonymous)
+  ok 1 1A
+  ok 2 A1
+  ok 3 ABC
+  ok 4 abc
+  ok 5 555
+  ok 6 5z
+  ok 7 ...
+
+  1..7
+  # tests 7
+  # pass  7
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      return /^[^0-9][^A-Z]/.test(str)
+    }
