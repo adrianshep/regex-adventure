@@ -18,3 +18,30 @@ put a `\` before the character:
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+  TAP version 13
+# (anonymous)
+ok 1 abc.
+ok 2 abc
+ok 3 ...
+ok 4 ...x
+ok 5 ...\n
+
+1..5
+# tests 5
+# pass  5
+
+# ok
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@     YOUR SOLUTION IS CORRECT!     @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+// Here is the reference solution:
+
+  module.exports = function (str) {
+    return /\.$/.test(str)
+  }
