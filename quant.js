@@ -1,4 +1,4 @@
 module.exports = function (str) {
   /* ... */
-  /x/.test(str)
+  /[0-9]+[\.jpg|\.jpeg]/.test(str)
 }
