@@ -22,6 +22,36 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  TAP version 13
+  # (anonymous)
+  ok 1 123.jpg
+  ok 2 123.jpeg
+  ok 3 abc.jpeg
+  ok 4 123abc.jpeg
+  ok 5 123
+  ok 6 123.jpg2000
+  ok 7 123.png
+  ok 8 .jpeg
+  ok 9 111.jpeeg
+
+  1..9
+  # tests 9
+  # pass  9
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      return /^\d+\.jpe?g$/.test(str)
+    }
 
 
 incorrect attempt at solution:
