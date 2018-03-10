@@ -16,6 +16,32 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  TAP version 13
+  # (anonymous)
+  ok 1 1,2,3
+  ok 2 4, 5, 6, 7
+  ok 3 1337
+  ok 4 a,\nb,\nc,\nd
+  ok 5 q\r\n ,\r\n r\r\n ,\r\n s
+
+  1..5
+  # tests 5
+  # pass  5
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      return str.split(/\s*,\s*/)
+    }
 
 
   This solution is incorrect:
