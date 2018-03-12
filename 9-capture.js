@@ -20,3 +20,53 @@ group.
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+
+
+  Incorrect solution:
+
+  module.exports = function (str) {
+    var m = /(x=\d*)/.exec(str)
+    return m ? m[1] : null
+  }
+
+
+  TAP version 13
+# (anonymous)
+not ok 1 x=5
+  ---
+    operator: equal
+    expected: '5'
+    actual:   'x=5'
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 2 x=5
+  ---
+    operator: equal
+    expected: '5'
+    actual:   'x=5'
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 3 x=abc
+  ---
+    operator: equal
+    expected: null
+    actual:   'x='
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 4 beep x=123123 boop
+  ---
+    operator: equal
+    expected: '123123'
+    actual:   'x=123123'
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+
+1..4
+# tests 4
+# pass  0
+# fail  4
+
+#########################################
+###   YOUR SOLUTION IS NOT CORRECT!   ###
+#########################################
