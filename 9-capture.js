@@ -21,6 +21,32 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  TAP version 13
+  # (anonymous)
+  ok 1 x=5
+  ok 2 x=5
+  ok 3 x=abc
+  ok 4 beep x=123123 boop
+
+  1..4
+  # tests 4
+  # pass  4
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      var m = /x=(\d+)/.exec(str)
+      return m ? m[1] : null
+    }
 
 
   Incorrect solution:
