@@ -1,4 +1,4 @@
 module.exports = function (str) {
-  var m = /\Wx=(\d+)\W/.exec(str)
+  var m = /\W\bx=(\d+)\b\W/.exec(str)
   return m ? m[1] : null
 }
