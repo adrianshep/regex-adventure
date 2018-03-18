@@ -20,3 +20,41 @@ word.
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+  module.exports = function (str) {
+    var m = /\W\bx=(\d+)\b\W/.exec(str)
+    return m ? m[1] : null
+  }
+
+
+
+  TAP version 13
+# (anonymous)
+not ok 1 x=5
+  ---
+    operator: equal
+    expected: '5'
+    actual:   null
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 2 x=5
+  ---
+    operator: equal
+    expected: '5'
+    actual:   null
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+ok 3 fox=123
+ok 4 x=abc
+ok 5 x=33qrs
+ok 6 3x=33
+ok 7 beep x=123123 boop
+
+1..7
+# tests 7
+# pass  5
+# fail  2
+
+#########################################
+###   YOUR SOLUTION IS NOT CORRECT!   ###
+#########################################
