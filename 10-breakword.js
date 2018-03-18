@@ -21,12 +21,43 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      var m = /\bx=(\d+)\b/.exec(str)
+      return m ? m[1] : null
+    }
+
+
+  TAP version 13
+  # (anonymous)
+  ok 1 x=5
+  ok 2 x=5
+  ok 3 fox=123
+  ok 4 x=abc
+  ok 5 x=33qrs
+  ok 6 3x=33
+  ok 7 beep x=123123 boop
+
+  1..7
+  # tests 7
+  # pass  7
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+incorrect solution:
+
   module.exports = function (str) {
     var m = /\W\bx=(\d+)\b\W/.exec(str)
     return m ? m[1] : null
   }
-
-
 
   TAP version 13
 # (anonymous)
