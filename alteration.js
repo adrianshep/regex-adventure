@@ -1,3 +1,3 @@
 module.exports = function (str) {
-  return /.../.test(str)
+  return /(cat|dog|robot\d+)/.test(str)
 }
