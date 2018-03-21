@@ -21,3 +21,42 @@ Alteration operators are often seen in capture groups:
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+
+
+
+incorrect solution:
+
+  module.exports = function (str) {
+    return /(cat|dog|robot\d+)/.test(str)
+  }
+
+  TAP version 13
+# (anonymous)
+ok 1 cat5
+ok 2 dog5000
+ok 3 robot10
+not ok 4 xrobot10
+  ---
+    operator: notOk
+    expected: false
+    actual:   true
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+ok 5 robot
+not ok 6 robot1000f
+  ---
+    operator: notOk
+    expected: false
+    actual:   true
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+
+1..6
+# tests 6
+# pass  4
+# fail  2
+
+#########################################
+###   YOUR SOLUTION IS NOT CORRECT!   ###
+#########################################
