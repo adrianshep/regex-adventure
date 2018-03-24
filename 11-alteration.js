@@ -23,6 +23,34 @@ To verify your solution, run:
   regex-adventure verify solution.js
 
 
+  TAP version 13
+  # (anonymous)
+  ok 1 cat5
+  ok 2 dog5000
+  ok 3 robot10
+  ok 4 xrobot10
+  ok 5 robot
+  ok 6 robot1000f
+
+  1..6
+  # tests 6
+  # pass  6
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    module.exports = function (str) {
+      return /^(cat|dog|robot)\d+$/.test(str)
+    }
+
 
 
 incorrect solution:
