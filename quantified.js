@@ -1,3 +1,3 @@
 module.exports = function (str) {
-  return /^(0x(\d\w)?(\d\w)?)\s+{8}/.test(str)
+  return /^(0x[A-Fa-f\d]{2}\s+){8}$/.test(str)
 }
