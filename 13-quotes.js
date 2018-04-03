@@ -19,3 +19,45 @@ Negated character classes may be useful here.
 To verify your solution, run:
 
   regex-adventure verify solution.js
+
+
+
+incorrect solution:
+
+  module.exports = function (str) {
+    return str.match(/("\W+"){+}/g)
+  }
+
+
+  TAP version 13
+# (anonymous)
+not ok 1 one "two three four" five six "seven eight" nine
+  ---
+    operator: deepEqual
+    expected: [ '"two three four"', '"seven eight"' ]
+    actual:   null
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 2 "beep boop" whatever "tacos" eleven "eighty"
+  ---
+    operator: deepEqual
+    expected: [ '"beep boop"', '"tacos"', '"eighty"' ]
+    actual:   null
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+not ok 3 empty ""
+  ---
+    operator: deepEqual
+    expected: [ '""' ]
+    actual:   null
+    at: Test.<anonymous> (/usr/local/lib/node_modules/regex-adventure/node_modules/adventure-verify/index.js:48:40)
+  ...
+
+1..3
+# tests 3
+# pass  0
+# fail  3
+
+#########################################
+###   YOUR SOLUTION IS NOT CORRECT!   ###
+#########################################
