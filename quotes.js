@@ -1,3 +1,3 @@
 module.exports = function (str) {
-  return str.match(/("\W+"){+}/g)
+  return str.match(/("[^""]*"/g)
 }
