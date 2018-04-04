@@ -20,6 +20,27 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  module.exports = function (str) {
+    return str.match(/"[^""]*"/g)
+  }
+
+
+  TAP version 13
+  # (anonymous)
+  ok 1 one "two three four" five six "seven eight" nine
+  ok 2 "beep boop" whatever "tacos" eleven "eighty"
+  ok 3 empty ""
+
+  1..3
+  # tests 3
+  # pass  3
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 incorrect solution:
