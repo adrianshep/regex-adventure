@@ -1,4 +1,4 @@
 module.exports = function (str) {
   /* return html string */
-  /* return str.match(/"[^""]*"/g) */
+  return str.match(/<blink>[^@@]*</blink>/g)
 }
