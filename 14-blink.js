@@ -19,6 +19,34 @@ To verify your solution, run:
 
   regex-adventure verify solution.js
 
+  TAP version 13
+  # (anonymous)
+  ok 1 @@whatever@@
+  ok 2 *abc* @@def@@ __ghi__
+  ok 3 @@**cool**@@
+  ok 4 beep @@boop@@ says *the* @@**robot**@@!
+
+  1..4
+  # tests 4
+  # pass  4
+
+  # ok
+
+
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@     YOUR SOLUTION IS CORRECT!     @@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+  // Here is the reference solution:
+
+    var marked = require('marked')
+
+    module.exports = function (str) {
+      var md = marked(str)
+      return md.replace(/@@(.+?)@@/g, '<blink>$1</blink>')
+    }
 
 
 incorrect solution:
